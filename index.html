@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stacker</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="game-container">
+      <header class="game-panel">
+        <h1>Stacker</h1>
+        <div class="score">
+          <span>SCORE</span>
+          <span class="score-counter">00000</span>
+        </div>
+      </header>
+
+      <main class="game-board">
+        <!-- This will stay empty in HTML - we will generate this in the JS file -->
+        <div class="grid"></div>
+
+        <!-- Placeholder for Game Over screen -->
+        <div class="end-game-screen hidden">
+          <h2 class="end-game-text">Game<br />Over</h2>
+          <button class="btn play-again">Play Again</button>
+        </div>
+      </main>
+
+      <button class="btn btn-full stack">Stack</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
